@@ -46,9 +46,17 @@ int main(void)
     // Infinite loop
     while (1)
     {
-        // Pause several milliseconds
-        _delay_ms(BLINK_DELAY);
-        GPIO_toggle(&PORTB,LED_GREEN);
+        if(GPIO_read(&DDRD, BTN)==1)
+        {
+          GPIO_toggle(&PORTB,LED_GREEN);
+          GPIO_toggle(&PORTC,LED_RED);
+          _delay_ms(BLINK_DELAY);    
+        }  
+       else
+       {
+          GPIO_toggle(&PORTB,LED_GREEN); 
+          _delay_ms(BLINK_DELAY); 
+       }   
         
     }
 
