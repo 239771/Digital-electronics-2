@@ -48,8 +48,9 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 3. Flowchart figure for function `main()` and interrupt service routine `ISR(TIMER1_OVF_vect)` of application that ensures the flashing of one LED in the timer interruption. When the button is pressed, the blinking is faster, when the button is released, it is slower. Use only a timer overflow and not a delay library.
 
- ![CamScanner 10-18-2021 15 32_1](https://user-images.githubusercontent.com/91123594/137743805-ad1c1869-fd83-4040-abf0-7c4a6e90dc9e.jpg)
- ![CamScanner 10-18-2021 15 32_2](https://user-images.githubusercontent.com/91123594/137743851-f2fa09c6-3613-4d88-9577-13df9347df55.jpg)
+ ![CamScanner 10-19-2021 19 13_2](https://user-images.githubusercontent.com/91123594/137959453-ad263c40-8d43-40a1-899c-5874c8d4b815.jpg)
+ ![CamScanner 10-19-2021 19 13_3](https://user-images.githubusercontent.com/91123594/137959468-6871b38d-aa07-498e-8820-e4d602e79a0a.jpg)
+
 
 
 
@@ -57,4 +58,4 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 1. Scheme of Knight Rider application with four LEDs and a push button, connected according to Multi-function shield. Connect AVR device, LEDs, resistors, push button, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
-   ![CamScanner 10-18-2021 15 44](https://user-images.githubusercontent.com/91123594/137744121-7d94f1ca-2dba-4092-a29b-35b1806872d2.jpg)
+![CamScanner 10-19-2021 19 13_1](https://user-images.githubusercontent.com/91123594/137959501-5935b766-8863-46fd-9bd2-bf14b7024f89.jpg)
