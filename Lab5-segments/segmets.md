@@ -8,8 +8,8 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### 7-segment library
 
 1. In your words, describe the difference between Common Cathode and Common Anode 7-segment display.
-   * CC SSD
-   * CA SSD
+   * CC SSD: All the LEDS cathodes will be connected in the same terminal, which is GND, so the way to turn those LEDS on is to apply some VCC voltage...LEDS will be active in high level.
+   * CA SSD: In this case all the LEDS anodes will be connected also in the same terminal but now this will be a VCC terminal so in order to turn them on we must apply 0V...LEDS will be active in low level
 
 2. Code listing with syntax highlighting of two interrupt service routines (`TIMER1_OVF_vect`, `TIMER0_OVF_vect`) from counter application with at least two digits, ie. values from 00 to 59:
 
@@ -20,8 +20,18 @@ Link to your `Digital-electronics-2` GitHub repository:
  **********************************************************************/
 ISR(TIMER1_OVF_vect)
 {
-    // WRITE YOUR CODE HERE
-
+    if(cnt1==9){ //Overflow for units equals 9, adding +1 in the second digit to reach tens
+      cnt1==0;
+      cnt2++;
+    }
+    else{       //No overflow means just keep increasing units
+      cnt1++;
+    }
+    
+    if(cnt2==6){     //Overflow for the limit of our counter (60)
+      cnt2==0;
+      cnt1==0;
+    }
 }
 ```
 
@@ -32,10 +42,17 @@ ISR(TIMER1_OVF_vect)
  **********************************************************************/
 ISR(TIMER0_OVF_vect)
 {
-    static uint8_t pos = 0;
-
-    // WRITE YOUR CODE HERE
-
+    static uint8_t pos = 0;      //In every interrupt it will change the position of the shown display
+    if(pos==0){
+     SEG_update_shift_regs(counter1,0);  
+     pos=1; //Change position 
+    }
+    
+    else{
+     SEG_update_shift_regs(counter2,1);   
+     pos=0;
+    }
+  
 }
 ```
 
