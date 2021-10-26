@@ -2,7 +2,7 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   https://github.com/239771/Digital-electronics-2
 
 
 ### 7-segment library
@@ -58,8 +58,8 @@ ISR(TIMER0_OVF_vect)
 
 3. Flowchart figure for function `SEG_clk_2us()` which generates one clock period on `SEG_CLK` pin with a duration of 2&nbsp;us. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
 
-   ![your figure]()
-
+   
+![IMG-20211026-WA0006](https://user-images.githubusercontent.com/91123594/138903731-2ed1957d-2ca4-49b6-b4a0-0e8aeca07af2.jpg)
 
 ### Kitchen alarm
 
@@ -67,4 +67,6 @@ Consider a kitchen alarm with a 7-segment display, one LED and three push button
 
 1. Scheme of kitchen alarm; do not forget the supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values.
 
-   ![your figure]()
+![lab5 draw](https://user-images.githubusercontent.com/91123594/138903802-926799f2-4e76-4f63-8e57-84e48e723bab.png)
+
+
