@@ -1,8 +1,8 @@
-# Lab 7: YOUR_FIRSTNAME LASTNAME
+# Lab 7: Jesús Borobia
 
 Link to this file in your GitHub repository:
 
-[https://github.com/your-github-account/repository-name/lab_name](https://github.com/...)
+[https://github.com/239771/Digital-electronics-2](https://github.com/239771/Digital-electronics-2)
 
 ### Analog-to-Digital Conversion
 
