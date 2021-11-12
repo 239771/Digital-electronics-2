@@ -13,8 +13,9 @@ Link to this file in your GitHub repository:
    * I2C pins
    * SPI pins
    * external interrupt pins INT0, INT1
+   
+   ![arduino_uno_pinout](https://user-images.githubusercontent.com/91123594/141494343-cf7c03bd-bfc7-4583-a647-3980d2063024.png)
 
-   ![your figure](Images/arduino_uno_pinout.png)
 
 ### I2C
 
